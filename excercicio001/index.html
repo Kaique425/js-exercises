@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Javascript</title>
+</head>
+
+<body>
+    <h1 id="titulo">Hello World</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        window.alert("Hello World")
+        var choice = window.confirm("Está gostando de javascript")
+        window.alert(` ${choice} `)
+        var name = window.prompt("Digite seu nome ")
+        document.body.querySelector("titulo").textContent(`${name}`)
+        window.alert("Hello World")
+        var choice = window.confirm("Está gostando de javascript")
+        window.alert(` ${typeof (choice)}`)
+        if (choice === true) {
+            window.alert(`Que bom que está gostando`)
+        }
+        else {
+            window.alert(`Vamos tentar melhorar`)
+        }
+        //var name = window.prompt("Digite seu nome ")
+        //document.body.querySelector("titulo").textContent(`${name}`)
+
+    </script>
+</body>
+
+</html>
