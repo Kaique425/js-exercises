@@ -1,4 +1,4 @@
 
 for(var i = 0; i < 6; i++){
-    console.log("Hello World")
+    console.log(`O valor de i é ${i}`)
 }

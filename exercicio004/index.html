@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 004</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>Primeiros comandos manipulando o DOM</h1>
+    <p>Primeiro Paragrafo</p>
+    <p>Segundo paragrafo</p>
+    <button onclick="muda_cor()"></button>
+    <div id="msg">
+        teste
+    </div>
+    <script>
+        /*
+        window.navigator.appName
+        window.document.charset
+        */
+        function muda_cor(teste) {
+            var body = document.getElementsByTagName("body")[0]
+
+            var bg_color = body.style.backgroundColor
+            if (bg_color === "black") {
+                bg_color = "gray"
+                body.style.backgroundColor = bg_color
+            } else {
+                bg_color = "black"
+                body.style.backgroundColor = bg_color
+            }
+            return console.log("Fui chamado")
+        }
+        var p1 = document.getElementsByTagName("p")[0]
+        var body = document.getElementsByTagName("body")
+        window.document.write(p1.innerHTML)
+        var div_msg = window.document.querySelector("div#msg")
+        div_msg.innerHTML = p1.innerHTML
+    </script>
+</body>
+
+</html>
